@@ -28,7 +28,6 @@ An open-source web app to **report**, **track**, and **resolve** incidents in in
 ### 📁 Project Structure
 
 <pre> 
-  ```bash
   incident-management/ 
   ├── app/ │ 
   ├── __init__.py 
@@ -52,7 +51,7 @@ An open-source web app to **report**, **track**, and **resolve** incidents in in
   ├── config.py 
   ├── run.py 
   ├── requirements.txt 
-  └── README.md ``` 
+  └── README.md 
 </pre>
 
 ## 🚀 Running Locally with Docker
