@@ -1,0 +1,42 @@
+# version: '3.8'
+
+# services:
+#   web:
+#     build: .
+#     container_name: incident-app
+#     ports:
+#       - "5000:5000"
+#     volumes:
+#       - .:/app
+#     depends_on:
+#       - db
+#     environment:
+#       - DATABASE_URL=sqlite:///database.db  
+#       - MAIL_USERNAME=bhumikajayswal01@gmail.com
+#       - MAIL_PASSWORD=ypywnqquyuuilnwo
+
+#   db:
+#     image: postgres:13
+#     container_name: incident-db
+#     environment:
+#       POSTGRES_USER: incident_user
+#       POSTGRES_PASSWORD: incident_pass
+#       POSTGRES_DB: incident_db
+#     volumes:
+#       - incident-data:/var/lib/postgresql/data
+
+# volumes:
+#   incident-data:
+
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+
