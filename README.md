@@ -27,7 +27,33 @@ An open-source web app to **report**, **track**, and **resolve** incidents in in
 
 ### 📁 Project Structure
 
-<pre> ```bash incident-management/ ├── app/ │ ├── __init__.py │ ├── models.py │ ├── routes.py │ └── templates/ │ ├── incidents.html │ ├── report.html │ └── edit.html │ ├── static/ ├── screenshots/ │ ├── 01_homepage.png │ ├── 02_report_form.png │ └── 03_email_received.png │ ├── .env ├── .gitignore ├── .dockerignore ├── Dockerfile ├── docker-compose.yml ├── config.py ├── run.py ├── requirements.txt └── README.md ``` </pre>
+<pre> 
+  ```bash
+  incident-management/ 
+  ├── app/ │ 
+  ├── __init__.py 
+  │ 
+  ├── models.py 
+  │ ├── routes.py 
+  │ └── templates/ 
+  │ ├── incidents.html 
+  │ ├── report.html 
+  │ └── edit.html 
+  │ ├── static/ 
+  ├── screenshots/ 
+  │ ├── 01_homepage.png 
+  │ ├── 02_report_form.png 
+  │ └── 03_email_received.png 
+  │ ├── .env 
+  ├── .gitignore 
+  ├── .dockerignore 
+  ├── Dockerfile 
+  ├── docker-compose.yml 
+  ├── config.py 
+  ├── run.py 
+  ├── requirements.txt 
+  └── README.md ``` 
+</pre>
 
 ## 🚀 Running Locally with Docker
 
