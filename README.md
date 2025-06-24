@@ -130,7 +130,7 @@ A pre-written .bat file is available for convenience.
 
 | Homepage                                 | Report Form                               | Email Notification                          |
 | ---------------------------------------- | ----------------------------------------- | ------------------------------------------- |
-| ![Homepage](screenshots/01_homepage.png) | ![Report](screenshots/02_report_form.png) | ![Email](screenshots/03_email_received.png) |
+| "C:\Users\bjays\OneDrive\Desktop\Devops\Final_Project\incident-management\screenshots\01_homepage.png" | ![Report](screenshots/02_report_form.png) | ![Email](screenshots/03_email_received.png) |
 
 ---
 
