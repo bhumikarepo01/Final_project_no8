@@ -1,4 +1,4 @@
-# 🚨 Incident Management System
+z# 🚨 Incident Management System
 
 An open-source web app to **report**, **track**, and **resolve** incidents in infrastructure or applications.
 
@@ -35,16 +35,17 @@ incident-management/
 │   ├── models.py
 │   ├── routes.py
 │   ├── templates/
-│   │   ├── incidents.html
-│   │   ├── report.html
-│   │   └── edit.html
-│   └── static/
-│
+│      ├── incidents.html
+│      ├── report.html
+│      └── edit.html
+│   
 ├── screenshots/
 │   ├── 01_homepage.png
 │   ├── 02_report_form.png
 │   ├── 03_email_received.png
 │   └── 04_update_mail.png
+|
+|── static/
 │
 ├── instance/
 │   └── database.db
@@ -66,7 +67,9 @@ incident-management/
 ## 🚀 Run Project with Docker (Recommended)
 
 ```bash```
+
 docker-compose build
+
 docker-compose up -d
 
 Then visit: http://localhost:5000
@@ -140,4 +143,4 @@ A pre-written .bat file is available for convenience.
 
 | Incident Updated Email |
 | ---------------------- |
-| ![Updated](screenshots/04_update_mail.png) |
+| ![Updated](screenshots/04_Update_email_receive) |
