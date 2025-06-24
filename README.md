@@ -11,68 +11,133 @@ An open-source web app to **report**, **track**, and **resolve** incidents in in
 - **UI:** HTML + Bootstrap
 - **Email:** Gmail SMTP (Flask-Mail)
 - **Containerization:** Docker
+- **Deployment:** Gunicorn (Production) with Docker
 - **Version Control:** Git & GitHub
 
 ---
 
 ## ✅ Features
 
-- Report new incidents
-- View all logged incidents
-- Edit status and assign responsible person
-- Send email notification when a new issue is reported
-- Deployed using Docker with Gunicorn in production mode
+- 📝 Report new incidents
+- 📋 View all logged incidents
+- ✏️ Update status and assign a responsible person
+- 📧 Email notifications on new incident submission
+- 🐳 Dockerized deployment for local and production use
 
 ---
 
-### 📁 Project Structure
+## 📁 Project Structure
 
-<pre> 
-  incident-management/ 
-  ├── app/ │ 
-  ├── __init__.py 
-  │ 
-  ├── models.py 
-  │ ├── routes.py 
-  │ └── templates/ 
-  │ ├── incidents.html 
-  │ ├── report.html 
-  │ └── edit.html 
-  │ ├── static/ 
-  ├── screenshots/ 
-  │ ├── 01_homepage.png 
-  │ ├── 02_report_form.png 
-  │ └── 03_email_received.png 
-  │ ├── .env 
-  ├── .gitignore 
-  ├── .dockerignore 
-  ├── Dockerfile 
-  ├── docker-compose.yml 
-  ├── config.py 
-  ├── run.py 
-  ├── requirements.txt 
-  └── README.md 
+<pre>
+incident-management/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── templates/
+│   │   ├── incidents.html
+│   │   ├── report.html
+│   │   └── edit.html
+│   └── static/
+│
+├── screenshots/
+│   ├── 01_homepage.png
+│   ├── 02_report_form.png
+│   ├── 03_email_received.png
+│   └── 04_update_mail.png
+│
+├── instance/
+│   └── database.db
+│
+├── .env
+├── .gitignore
+├── .dockerignore
+├── Dockerfile
+├── docker-compose.yml
+├── config.py
+├── requirements.txt
+├── run.py
+├── start_app.bat
+└── README.md
 </pre>
 
-## 🚀 Running Locally with Docker
+---
 
-```bash```
+## 🚀 Run Project with Docker (Recommended)
+
+```bash
 docker-compose build
 docker-compose up -d
 
-Then open: http://localhost:5000
+Then visit: http://localhost:5000
 
-📧 Email Notification Example
-When a new incident is submitted, an email like this is sent:
+🧪 Run Project Manually (Without Docker)
+✅ Open PowerShell or Git Bash
 
-Subject: New Incident Reported
+🔁 Navigate to project root directory:
 
-Title: Server Down
-Description: The database server is not responding since 11:00 AM.
+    cd path/to/incident-management
+
+📦 Create and activate virtual environment:
+
+    python -m venv venv
+    venv\Scripts\activate  # On Windows
+
+📚 Install dependencies:
+
+    pip install -r requirements.txt
+
+⚙️ Create .env file and add your config:
+
+    MAIL_USERNAME=your_email@gmail.com
+    MAIL_PASSWORD=your_password
+    SQLALCHEMY_DATABASE_URI=sqlite:///instance/database.db
+
+🛠 Create database:
+
+    flask shell
+    >>> from app import db
+    >>> db.create_all()
+    >>> exit()
+
+🚀 Run the app:
+
+    flask run
+
+Then open: http://127.0.0.1:5000
+
+⚡ Run App Instantly using .bat file (Windows)
+A pre-written .bat file is available for convenience.
+
+📄 start_app.bat
+
+    @echo off
+    cd /d "%~dp0"
+    call venv\Scripts\activate
+    flask run
+
+✅ How to use:
+
+    1.Double-click on start_app.bat
+
+    2.Your virtual environment will activate and start the Flask app
+
+    3.Open http://127.0.0.1:5000
+
+## 📧 Email Notification Example
+
+### New Incident Notification
 
 | Homepage                                 | Report Form                               | Email Notification                          |
 | ---------------------------------------- | ----------------------------------------- | ------------------------------------------- |
 | ![Homepage](screenshots/01_homepage.png) | ![Report](screenshots/02_report_form.png) | ![Email](screenshots/03_email_received.png) |
 
+---
 
+### Incident Update Notification
 
+📤 When the incident is updated, a second email like this is sent:
+
+| Incident Updated Email |
+| ---------------------- |
+| ![Updated](screenshots/04_update_mail.png) |
