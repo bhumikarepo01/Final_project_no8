@@ -65,7 +65,7 @@ incident-management/
 
 ## 🚀 Run Project with Docker (Recommended)
 
-```bash
+```bash```
 docker-compose build
 docker-compose up -d
 
