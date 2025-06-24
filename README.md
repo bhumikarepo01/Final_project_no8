@@ -143,4 +143,4 @@ A pre-written .bat file is available for convenience.
 
 | Incident Updated Email |
 | ---------------------- |
-| ![Updated](screenshots/04_Update_email_receive) |
+| ![Updated](screenshots/04_Update_email_receive.png) |
