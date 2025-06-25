@@ -43,7 +43,7 @@ incident-management/
 │   ├── 01_homepage.png
 │   ├── 02_report_form.png
 │   ├── 03_email_received.png
-│   └── 04_update_mail.png
+│   └── 04_Update_email_received.png
 |
 |── static/
 │
@@ -74,7 +74,7 @@ docker-compose up -d
 
 Then visit: http://localhost:5000
 
-##🧪 Run Project Manually (Without Docker)
+## 🧪 Run Project Manually (Without Docker)
 ✅ Open PowerShell or Git Bash
 
 🔁 Navigate to project root directory:
@@ -109,7 +109,7 @@ Then visit: http://localhost:5000
 
 Then open: http://127.0.0.1:5000
 
-##⚡ Run App Instantly using .bat file (Windows)
+## ⚡ Run App Instantly using .bat file (Windows)
 A pre-written .bat file is available for convenience.
 
 📄 start_app.bat
