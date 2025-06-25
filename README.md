@@ -1,4 +1,4 @@
-z# 🚨 Incident Management System
+## 🚨 Incident Management System
 
 An open-source web app to **report**, **track**, and **resolve** incidents in infrastructure or applications.
 
@@ -74,7 +74,7 @@ docker-compose up -d
 
 Then visit: http://localhost:5000
 
-🧪 Run Project Manually (Without Docker)
+##🧪 Run Project Manually (Without Docker)
 ✅ Open PowerShell or Git Bash
 
 🔁 Navigate to project root directory:
@@ -109,7 +109,7 @@ Then visit: http://localhost:5000
 
 Then open: http://127.0.0.1:5000
 
-⚡ Run App Instantly using .bat file (Windows)
+##⚡ Run App Instantly using .bat file (Windows)
 A pre-written .bat file is available for convenience.
 
 📄 start_app.bat
